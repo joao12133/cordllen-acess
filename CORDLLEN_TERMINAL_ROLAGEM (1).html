@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CORDLLEN ACCESS – Terminal GEN/X31</title>
+  <style>
+    body {
+      background-color: black;
+      color: #00ff00;
+      font-family: monospace;
+      padding: 20px;
+      margin: 0;
+    }
+    h1 {
+      color: #00ff00;
+      text-align: center;
+      border-bottom: 1px solid #00ff00;
+      padding-bottom: 10px;
+    }
+    .menu {
+      max-width: 600px;
+      margin: 40px auto;
+    }
+    .button {
+      background-color: transparent;
+      border: 1px solid #00ff00;
+      color: #00ff00;
+      padding: 12px;
+      width: 100%;
+      margin: 10px 0;
+      font-size: 16px;
+      cursor: pointer;
+      text-align: left;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .button:hover {
+      background-color: #004400;
+    }
+    .footer {
+      text-align: center;
+      margin-top: 50px;
+      font-size: 12px;
+      opacity: 0.6;
+    }
+  </style>
+</head>
+<body onload="playStartupSound()">
+  <h1>CORDLLEN ACCESS – Terminal GEN/X31</h1>
+  <div class="menu">
+    <a href="fichas-personagens.pdf" class="button" download>1. Fichas de Personagens</a>
+    <a href="relatorios-medicos.pdf" class="button" download>2. Relatórios Médicos</a>
+    <a href="relatorios-policia.pdf" class="button" download>3. Relatórios da Polícia Federal</a>
+    <a href="arquivos-classificados.pdf" class="button" download>4. Arquivos Classificados</a>
+    <a href="mapa-instalacao.png" class="button" download>5. Mapa da Instalação</a>
+    <a href="cartoes-crachas.pdf" class="button" download>6. Cartões de Acesso e Crachás</a>
+    <a href="etiquetas-adesivos.pdf" class="button" download>7. Etiquetas e Adesivos de Pasta</a>
+    <a href="gravacoes.zip" class="button" download>8. Gravações</a>
+  </div>
+
+  <audio id="startup" src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_777a3f469f.mp3?filename=computer-startup-101258.mp3"></audio>
+
+  <script>
+    function playStartupSound() {
+      const sound = document.getElementById("startup");
+      sound.volume = 0.3;
+      sound.play();
+    }
+  </script>
+
+  <div class="footer">
+    CORDLLEN Systems &copy; Sigilo Nível Máximo | GEN/X31
+  </div>
+</body>
+</html>
